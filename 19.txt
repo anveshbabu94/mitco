@@ -57,7 +57,7 @@ C:\mitco> git config --global user.email "anveshbabu94@gmail.com"
 C:\mitco> git config --global user.name "anveshbabu94"
 
 C:\mitco>git commit -m "adding a new file"
-[master (root-commit) 211708e] adding a new file
+	[master (root-commit) 211708e] adding a new file
  1 file changed, 1 insertion(+)
  create mode 100644 1.txt
 
@@ -166,6 +166,8 @@ To https://github.com/anveshbabu94/mitco.git
 
 C:\mitco>git branch
 * featue1
+
+
   master
 
 C:\mitco>git status
