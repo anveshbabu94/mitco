@@ -1,0 +1,218 @@
+Microsoft Windows [Version 10.0.19042.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\mitco>git init
+Initialized empty Git repository in C:/mitco/.git/
+
+C:\mitco>git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mitco>git add 1.txt
+
+C:\mitco>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+
+
+C:\mitco>git commit -m "adding a new file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'User@DESKTOP-Q3APNT8.(none)')
+
+C:\mitco>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   1.txt
+
+
+C:\mitco> git config --global user.email "anveshbabu94@gmail.com"
+
+C:\mitco> git config --global user.name "anveshbabu94"
+
+C:\mitco>git commit -m "adding a new file"
+[master (root-commit) 211708e] adding a new file
+ 1 file changed, 1 insertion(+)
+ create mode 100644 1.txt
+
+C:\mitco>git status
+On branch master
+nothing to commit, working tree clean
+
+C:\mitco>git remote add origin https://github.com/anveshbabu94/mitco.git
+
+C:\mitco>git push origin mater
+error: src refspec mater does not match any
+error: failed to push some refs to 'https://github.com/anveshbabu94/mitco.git'
+
+C:\mitco>git push origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 220 bytes | 110.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/anveshbabu94/mitco.git
+ * [new branch]      master -> master
+
+C:\mitco>git branch
+* master
+
+C:\mitco>git checkout -b featue1
+Switched to a new branch 'featue1'
+
+C:\mitco>git status
+On branch featue1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+        21.txt
+        22.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mitco>git add .
+
+C:\mitco>git status
+On branch featue1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   2.txt
+        new file:   21.txt
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# On branch featue1
+# Changes to be committed:
+#       new file:   21.txt
+#       new file:   22.txt
+#
+# Untracked files:
+#       2.txt
+#
+~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       ~                                                                                                                       C:/mitco/.git/COMMIT_EDITMSG [unix] (02:46 22/03/2022)                                                         1,0-1 All[master 7b132f5] this is added files for 21 and 22
+ 2 files changed, 2 insertions(+)
+ create mode 100644 21.txt
+ create mode 100644 22.txt
+
+C:\mitco>git status
+
+
+NOTEEE;;;;;;;1
+Microsoft Windows [Version 10.0.19042.1586]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\mitco>git status
+On branch featue1
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   21.txt
+        new file:   22.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+
+C:\mitco>git commit -m "this is added files for 21 and 22"
+[featue1 8abc6fb] this is added files for 21 and 22
+ 2 files changed, 2 insertions(+)
+ create mode 100644 21.txt
+ create mode 100644 22.txt
+
+C:\mitco>git branch
+* featue1
+  master
+
+C:\mitco>git push origin featue1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 293 bytes | 293.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+remote:
+remote: Create a pull request for 'featue1' on GitHub by visiting:
+remote:      https://github.com/anveshbabu94/mitco/pull/new/featue1
+remote:
+To https://github.com/anveshbabu94/mitco.git
+ * [new branch]      featue1 -> featue1
+
+C:\mitco>git branch
+* featue1
+  master
+
+C:\mitco>git status
+On branch featue1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\mitco>git fetch
+remote: Enumerating objects: 1, done.
+remote: Counting objects: 100% (1/1), done.
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (1/1), 638 bytes | 159.00 KiB/s, done.
+From https://github.com/anveshbabu94/mitco
+   211708e..cee2dec  master     -> origin/master
+
+C:\mitco>git pull
+There is no tracking information for the current branch.
+Please specify which branch you want to merge with.
+See git-pull(1) for details.
+
+    git pull <remote> <branch>
+
+If you wish to set tracking information for this branch you can do so with:
+
+    git branch --set-upstream-to=origin/<branch> featue1
+
+
+C:\mitco>git branch
+* featue1
+  master
+
+C:\mitco>git checkout
+
+C:\mitco>git checkout  master
+Switched to branch 'master'
+
+C:\mitco>git branch
+  featue1
+* master
+
+C:\mitco>git branch -D featue1
+Deleted branch featue1 (was 8abc6fb).
+
+C:\mitco>git branch
+* master
+
+C:\mitco>
